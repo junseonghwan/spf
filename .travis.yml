@@ -3,10 +3,8 @@ compiler:
   - gcc
   - clang
 os: 
-  - linux
   - osx
 osx_image: xcode11.4
-dist: trusty
 addons:
   homebrew:
     packages:
@@ -14,12 +12,6 @@ addons:
       - gsl
       - boost
       - libomp
-  apt:
-    packages:
-      - cmake
-      - libgsl-dev
-      - libboost-dev
-      - libomp-dev
 script:
   - mkdir build
   - cd build
