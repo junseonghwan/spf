@@ -17,9 +17,9 @@ addons:
   apt:
     packages:
       - cmake
-      - gsl
-      - boost
-      - libomp
+      - libgsl-dev
+      - libboost-dev
+      - libomp-dev
 script:
   - mkdir build
   - cd build
