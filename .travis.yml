@@ -1,8 +1,11 @@
 language: cpp
 compiler:
+  - gcc
   - clang
-os: osx
-osx_image: xcode10.1
+os: 
+  - linux
+  - osx
+osx_image: xcode11.4
 dist: trusty
 addons:
   homebrew:
