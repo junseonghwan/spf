@@ -2,6 +2,11 @@ file( GLOB TESTS *.cpp *.hpp)
 
 include_directories(${PROJECT_SOURCE_DIR}/src ${OPENMP_CXX_INCLUDE_DIRS})
 
+find_package(Boost 1.67 COMPONENTS regex unit_test_framework REQUIRED)
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS}) 
+endif()
+
 find_package(OpenMP REQUIRED)
 if (OPENMP_FOUND)
     set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
