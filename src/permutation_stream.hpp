@@ -14,6 +14,8 @@
 #include <gsl/gsl_randist.h>
 #include <gsl/gsl_permutation.h>
 
+#include "sampling_utils.hpp"
+
 using namespace std;
 
 class PermutationStream
